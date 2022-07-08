@@ -21,7 +21,7 @@ npx tailwindcss init
 
 - Agregue las rutas a todos sus archivos de plantilla en su archivo tailwind.config.js:
 
-sh
+```sh
 module.exports = {
 content: ["./src/**/*.{html,js}"],
 theme: {
@@ -29,8 +29,7 @@ extend: {},
 },
 plugins: [],
 }
-
-````
+```
 
 - Agregue las directivas @tailwind para cada una de las capas de Tailwind a su archivo CSS principal:
 
@@ -42,7 +41,7 @@ plugins: [],
 
 ```html
 <link href="/dist/output.css" rel="stylesheet" />
-````
+```
 
 ### Despliegue 📦
 
