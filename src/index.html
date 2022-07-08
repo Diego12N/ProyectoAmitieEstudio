@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Amite brinda un servicio integral acompañando a pequeñas, medianas y grandes organizaciones, desde un punto de vista analista objetivo reflejando asi la actualidad que transita la empresa."
+		/>
+		<!-- Link CSS Styles -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		/>
+		<!-- Link Flowbite CDN -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/flowbite@1.4.5/dist/flowbite.min.css"
+		/>
+		<link href="../dist/output.css" rel="stylesheet" />
+		<link rel="stylesheet" href="index.css" />
+	</head>
+
+	<body>
+		<header
+			id="main-nav"
+			class="bg-white mx-auto flex justify-center py-5 w-full"
+		>
+			<div class="w-full">
+				<!-- Navigation -->
+				<nav
+					class="bg-white max-w-screen-xl mx-auto border-gray-200 px-10 xl:px-0 py-2.5 rounded w-full"
+				>
+					<div
+						class="flex flex-wrap justify-between items-center w-full xl:px-10"
+					>
+						<a href="#" class="basis-4/5 max-w-[280px]">
+							<!-- Cambiar cuando esten las imagenes -->
+							<img
+								id="nav-logotipe"
+								src="../src/assets/svg/AmitieIsologotipo.svg"
+								class="mr-3 w-2/5 md:w-2/5"
+								alt="Amitie Estudio Isologotipo"
+							/>
+						</a>
+						<button
+							id="mobile-button"
+							data-collapse-toggle="mobile-menu"
+							type="button"
+							class="inline-flex items-center pr-0 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+							aria-controls="mobile-menu"
+							aria-expanded="false"
+						>
+							<span class="sr-only">Open main menu</span>
+							<svg
+								class="h-6"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+									clip-rule="evenodd"
+								></path>
+							</svg>
+							<svg
+								class="hidden w-6 h-6"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+									clip-rule="evenodd"
+								></path>
+							</svg>
+						</button>
+						<div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+							<ul
+								class="flex flex-col mt-4 md:flex-row md:items-center md:space-x-8 md:mt-0 md:text-sm md:font-medium"
+							>
+								<li class="font-bold">
+									<a
+										href="#"
+										class="mobile-link font-nunitoSans block py-2 pr-4 pl-3 text-black border-b border-lightGrey hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-bluePrimary md:p-0"
+										aria-current="page"
+										>Inicio</a
+									>
+								</li>
+								<li class="font-bold">
+									<a
+										href="#nosotros"
+										class="mobile-link font-nunitoSans block py-2 pr-4 pl-3 text-black border-b border-lightGrey hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-bluePrimary md:p-0"
+										>Nosotros</a
+									>
+								</li>
+								<li class="font-bold">
+									<a
+										href="#servicios"
+										class="mobile-link font-nunitoSans py-2 block pr-4 pl-3 text-black border-b border-lightGrey hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-bluePrimary md:p-0"
+										>Servicios</a
+									>
+								</li>
+								<li class="">
+									<button
+										class="mobile-link font-nunitoSans bg-bluePrimary font-bold text-left my-2 p-3 px-5 rounded-lg text-white border-b border-lightGrey hover:bg-lightBlue md:w-full md:m-0 md:hover:bg-lightBlue md:border-0 md:p-2 md:px-5 transition ease-in-out duration-200"
+										type="button"
+										data-modal-toggle="defaultModal"
+									>
+										Contacto
+									</button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!-- banner -->
+		<section id="inicio" class="relative w-full overflow-hidden">
+			<div
+				class="flex items-end max-w-screen-xl m-auto relative pb-16 pt-14 sm:py-16 md:py-32 md:pt-16 px-10"
+			>
+				<div
+					class="grid sm:grid-cols-1 md:grid-cols-2 gap-10 banner-responsive"
+				>
+					<div class="md:pr-10">
+						<h1
+							class="font-rubik font-bold text-3xl xl:text-4xl text-bgBlack mb-12"
+						>
+							TU CRECIMIENTO<br />
+							NOS INSPIRA.
+						</h1>
+						<p class="font-nunitoSans text-left sm:text-xl text-darkGrey mb-12">
+							<b>Amitié</b> brinda un servicio integral acompañando a pequeñas,
+							medianas y grandes organizaciones, desde un punto de vista
+							analista objetivo reflejando asi la actualidad que transita la
+							empresa.
+						</p>
+						<a
+							href="#servicios"
+							class="inline-block font-nunitoSans font-bold text-white p-3 px-5 bg-bluePrimary hover:bg-lightBlue transition ease-in-out duration-200 rounded-lg"
+						>
+							Conocer más
+						</a>
+					</div>
+					<div
+						class="shadow-header overflow-hidden rounded-lg banner-img-responsive"
+					>
+						<img
+							src="./assets/img/Header-min.jpg"
+							alt="Equipo de Trabajo"
+							class="sm:inline-block justify-self-center w-full zoom object-cover object-right h-full"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- SECCION BOTON CONTACTO -->
+		<section class="bg-bluePrimary py-3">
+			<div
+				class="flex flex-col gap-5 items-center sm:flex-row sm:justify-between sm:items-center max-w-screen-xl m-auto px-10 py-8 rounded-tr-3xl rounded-bl-3xl"
+			>
+				<h2 class="max-w-max font-rubik text-whiteBg text-2xl text-center">
+					¿QUERES EMPRENDER O TENES UN NEGOCIO?
+				</h2>
+				<button
+					class="flex items-center max-w-max border-2 rounded-md py-3 px-8 text-whiteBg hover:text-bluePrimary hover:bg-white transition ease-in-out duration-200 font-nunitoSans font-bold"
+					type="button"
+					data-modal-toggle="defaultModal"
+				>
+					Contactanos
+					<span class="text-2xl ml-5">→</span>
+				</button>
+			</div>
+		</section>
+		<!-- Main modal -->
+		<div
+			id="defaultModal"
+			tabindex="-1"
+			aria-hidden="true"
+			class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 w-full md:inset-0 h-modal md:h-full z-[1500]"
+		>
+			<div class="relative p-4 w-full max-w-sm">
+				<!-- Modal content -->
+				<div class="relative bg-white rounded-lg shadow">
+					<!-- Modal header -->
+					<div class="flex justify-between items-start p-6 rounded-t border-b">
+						<h3 class="text-xl font-semibold text-bluePrimary">
+							¿Tienes alguna consulta?
+						</h3>
+						<button
+							type="button"
+							class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 inline-flex items-center"
+							data-modal-toggle="defaultModal"
+						>
+							<svg
+								class="w-5 h-5"
+								fill="currentColor"
+								viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+									clip-rule="evenodd"
+								></path>
+							</svg>
+						</button>
+					</div>
+					<!-- Modal body -->
+					<div class="p-8 space-y-6">
+						<ul class="flex items-center flex-wrap justify-center">
+							<li class="font-rubik font-bold w-full mb-5 text-center">
+								Redes sociales
+							</li>
+							<li class="hover:cursor-pointer">
+								<a
+									href="https://www.instagram.com/estudioamitie/"
+									target="_blank"
+								>
+									<i
+										class="fa-brands fa-instagram text-4xl hover:text-lightBlue text-bluePrimary mx-3 inline-block"
+									></i>
+								</a>
+							</li>
+							<li class="hover:cursor-pointer">
+								<a
+									href="https://www.facebook.com/Amiti%C3%A9-Estudio-103548231900119"
+									target="_blank"
+								>
+									<i
+										class="fa-brands fa-facebook text-4xl hover:text-lightBlue text-bluePrimary mx-3 inline-block"
+									></i>
+								</a>
+							</li>
+							<li class="hover:cursor-pointer">
+								<a
+									href="https://api.whatsapp.com/send?phone=543437445166"
+									target="_blank"
+								>
+									<i
+										class="fa-brands fa-whatsapp text-4xl hover:text-lightBlue text-bluePrimary mx-3 inline-block"
+									></i>
+								</a>
+							</li>
+							<li
+								class="flex flex-col items-center text-darkGrey text-lg text-center py-5"
+							>
+								<a
+									href="mailto:estudioamitie@gmail.com"
+									class="inline-block pb-2 hover:text-bluePrimary"
+									>estudioamitie@gmail.com</a
+								>
+								<span class="border-b-[3px] border-bluePrimary px-10"></span>
+							</li>
+						</ul>
+					</div>
+					<div
+						class="flex items-center justify-center p-6 space-x-2 rounded-b border-t border-gray-200"
+					>
+						<button
+							data-modal-toggle="defaultModal"
+							type="button"
+							class="text-white bg-bluePrimary hover:bg-lightBlue focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+						>
+							Aceptar
+						</button>
+					</div>
+					<!-- End Modal body -->
+				</div>
+			</div>
+		</div>
+		<!-- Modal toggle -->
+		<!-- seccion oportunidades -->
+		<main class="w-full">
+			<div
+				class="flex flex-col px-10 md:px-20 xl:px-0 gap-10 items-start max-w-screen-xl mx-auto py-32"
+			>
+				<div class="m-auto">
+					<div>
+						<h2
+							class="font-rubik font-bold text-bluePrimary text-center text-2xl sm:text-4xl sm:text-left mb-5"
+						>
+							ASESORAMIENTO CONTABLE INTEGRAL
+						</h2>
+					</div>
+				</div>
+				<section
+					class="grid md:grid-cols-2 lg:grid-cols-3 lg:justify-around w-full gap-7"
+				>
+					<article
+						class="flex flex-col items-center text-center pt-14 rounded-lg"
+					>
+						<img class="h-36 mb-6" src="./assets/svg/list.svg" alt="Tips" />
+						<p class="h-24 w-full p-5 font-bold rounded-b-lg">
+							TE BRINDAMOS TIPS PARA TU EMPRENDIMIENTO.
+						</p>
+					</article>
+					<article
+						class="flex flex-col items-center text-center rounded-lg pt-14"
+					>
+						<img
+							class="h-36 mb-6"
+							src="./assets/svg/Working.svg"
+							alt="Gestiones Impositivas"
+						/>
+						<p class="h-24 w-full p-5 font-bold rounded-b-lg">
+							REALIZAMOS TODAS LAS GESTIONES IMPOSITIVAS.
+						</p>
+					</article>
+					<article
+						class="flex flex-col items-center text-center rounded-lg pt-14"
+					>
+						<img
+							class="h-36 mb-6"
+							src="./assets/svg/HandShake.svg"
+							alt="Trabajo en equipo"
+						/>
+						<p class="h-24 w-full p-5 font-bold rounded-b-lg">
+							TE ACOMPAÑAMOS EN EL PROYECTO PARA CRECER JUNTOS.
+						</p>
+					</article>
+				</section>
+			</div>
+			<!-- SECCION SERVICIOS  -->
+			<section
+				id="servicios"
+				class="flex items-center py-24 px-10 sm:px-20 bg-slate-200"
+			>
+				<article
+					class="sm:max-w-screen-xl m-auto flex flex-col shadow-lightGrey"
+				>
+					<!-- DETALLE DE SERVICIOS -->
+					<div class="flex flex-col w-full">
+						<h2
+							class="font-rubik font-bold text-2xl sm:text-4xl text-center mb-24 text-bluePrimary"
+						>
+							NUESTROS SERVICIOS
+						</h2>
+						<div
+							class="grid gap-8 md:gap-14 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between items-end"
+						>
+							<div
+								class="service-container md:inline-block shadow-card md:col-start-1 md:col-end-3 lg:col-start-1 lg:col-end-3 w-full sm:h-cardFull overflow-hidden relative rounded-lg"
+							>
+								<img
+									class="ib absolute bottom-0 object-cover imgService"
+									src="./assets/img/Office.jpg"
+									alt="Oficina"
+								/>
+								<img
+									class="hd absolute bottom-0 object-cover imgService"
+									src="./assets/img/Acuerdo.jpg"
+									alt="Acuerdo"
+								/>
+								<img
+									class="hd absolute bottom-0 object-cover imgService"
+									src="./assets/img/contabilidad.jpg"
+									alt="Contabilidad"
+								/>
+								<div class="bg-black h-full w-full absolute opacity-70"></div>
+								<ul
+									class="grid grid-rows-1 font-rubik text-3xl text-left text-white absolute pl-10 bottom-10 overflow-hidden"
+								>
+									<li class="ib w-3/4 service">
+										<strong class="text-bluePrimary">Gestionamos</strong> tus
+										impuestos.
+									</li>
+									<li class="hd w-3/4 service">
+										<strong class="text-bluePrimary">
+											Te ayudamos a ser el líder que necesitas</strong
+										>
+										para tu equipo de trabajo.
+									</li>
+									<li class="hd w-3/4 service">
+										Te brindamos las herramientas necesarias para
+										<strong class="text-bluePrimary"
+											>potenciar tu negocio.</strong
+										>
+									</li>
+								</ul>
+							</div>
+							<div
+								class="sm:min-h-card h-full shadow-card p-5 bg-white rounded-lg"
+							>
+								<div class="h-12 mb-1">
+									<i class="fa-solid fa-book text-bluePrimary text-4xl"></i>
+								</div>
+								<h3
+									class="inline-block font-rubik font-bold text-lg text-left p-1 border-b-4 border-bluePrimary mb-5"
+								>
+									Seguimiento impositivo
+								</h3>
+								<p class="font-nunitoSans text-sm md:text-base">
+									Nuestro equipo de tax tracking se encargará de gestionar tus
+									impuestos para que puedas dedicarte de lleno a tu negocio.
+								</p>
+							</div>
+							<div
+								class="sm:min-h-card h-full shadow-card p-5 bg-white rounded-lg"
+							>
+								<div class="h-12 mb-1">
+									<i
+										class="fa-solid fa-address-card text-bluePrimary text-4xl"
+									></i>
+								</div>
+								<h3
+									class="inline-block font-rubik font-bold text-lg text-left mb-5 p-1 border-b-4 border-bluePrimary"
+								>
+									Gestion del personal
+								</h3>
+								<p class="font-nunitoSans text-sm md:text-base">
+									Nuestro equipo de gestión de talento humano pone énfasis en
+									darte la solución adecuada para facilitarte la tarea operativa
+									con tus empleados, te ayudamos a ser el líder que necesitas
+									para tu equipo de trabajo.
+								</p>
+							</div>
+							<div
+								class="sm:min-h-card h-full shadow-card p-5 bg-white rounded-lg"
+							>
+								<div class="h-12 mb-1">
+									<i
+										class="fa-solid fa-users-line text-bluePrimary text-4xl"
+									></i>
+								</div>
+								<h3
+									class="inline-block font-rubik font-bold text-lg text-left mb-5 p-1 border-b-4 border-bluePrimary"
+								>
+									Gestion Sociedades
+								</h3>
+								<p class="font-nunitoSans text-sm md:text-base">
+									Si tenes una sociedad y necesitas ayuda, nuestro equipo se
+									encargará de mantener actualizada su información, potenciar su
+									actividad o gestionar proyectos. Beneficios exportadores: si
+									sos exportador nuestro equipo de Comex te guiará para
+									solicitar reintegros de IVA.
+								</p>
+							</div>
+							<div
+								class="sm:min-h-card h-full shadow-card p-5 bg-white rounded-lg"
+							>
+								<div class="h-12 mb-1">
+									<i
+										class="fa-solid fa-calendar-check text-bluePrimary text-4xl"
+									></i>
+								</div>
+								<h3
+									class="inline-block font-rubik font-bold text-lg text-left mb-5 p-1 border-b-4 border-bluePrimary"
+								>
+									Seguimientos a tu medida
+								</h3>
+								<p class="font-nunitoSans text-sm md:text-base">
+									Si queres evaluar el rendimiento de tu negocio, nuestro equipo
+									de business intelligence te ayudará revisando datos relevantes
+									y dándote las herramientas para potenciar su crecimiento.
+								</p>
+							</div>
+						</div>
+					</div>
+				</article>
+			</section>
+			<!-- SECCION NOSOTROS -->
+			<section id="nosotros" class="shadow-xl py-24 px-10 sm:px-20">
+				<article class="max-w-screen-xl m-auto">
+					<!-- CONTENEDOR NOSOTROS -->
+					<div class="flex flex-col">
+						<div class="sm:my-0 justify-center gap-10 mb-10">
+							<h2
+								class="font-rubik font-bold text-2xl sm:text-4xl text-center text-bluePrimary mb-28"
+							>
+								SOBRE NOSOTROS
+							</h2>
+							<div class="flex flex-col items-center gap-8 my-5 sm:my-0">
+								<div
+									class="flex flex-col items-center lg:flex-row lg:justify-center mb-8 rounded-lg lg:bg-cardBg lg:w-[890px] lg:shadow-xl relative"
+								>
+									<img
+										src="./assets/svg/arrow.svg"
+										alt="Misión Icono"
+										class="h-24 lg:h-32 m-4 mx-7"
+									/>
+									<div
+										class="lg:p-7 lg:bg-cardBgSecondary rounded-r-[10px] sm:h-cardService"
+									>
+										<h3 class="font-rubik font-bold text-2xl text-left pb-2">
+											Misión
+										</h3>
+										<p class="font-nunitoSans text-left text-sm md:text-base">
+											Amitié brinda un servicio integral acompañando a pequeñas,
+											medianas y grandes organizaciones, desde un punto de vista
+											analista objetivo reflejando asi la actualidad que
+											transita la empresa. La razon de ser de nuestro espacio
+											integral es
+											<b>"Tu crecimiento nos inspira"</b>
+											ya que los avances de cada clientes nos incentivan a
+											mejorar, capacitarnos y crecer de manera conjunta,
+											brindando asi nuevos conocimientos que modifiquen las
+											actitudes y comportamientos en equipo.
+										</p>
+									</div>
+								</div>
+								<div
+									class="flex flex-col-reverse items-center lg:flex-row justify-start mb-8 rounded-lg lg:bg-cardBg lg:w-[890px] lg:shadow-xl"
+								>
+									<div
+										class="lg:p-7 lg:bg-cardBgSecondary rounded-l-[10px] sm:h-cardService"
+									>
+										<h3 class="font-rubik font-bold text-2xl text-left pb-2">
+											Visión
+										</h3>
+										<p class="font-nunitoSans text-sm md:text-base">
+											Lograr posicionarnos de manera eficaz en las áreas que
+											requieran nuestra colaboración. Brindándoles un servicio
+											de acompañamiento continuo en cada tarea que desarrollen.
+											Buscando expandir las actividades en toda la provincia de
+											Entre Rios y sus alrededores. Promoviendo un enfoque
+											estratégico como objetivo para lograr niveles de
+											competitividad con las exigencias del mercado actual.
+										</p>
+									</div>
+									<img
+										src="./assets/svg/light.svg"
+										alt="Visión Icono"
+										class="h-24 sm:h-32 mb-4 mx-5"
+									/>
+								</div>
+								<div
+									class="flex items-start md:flex-row justify-start mb-8 md:bg-cardBgSecondary lg:w-[890px] md:h-[440px] lg:shadow-xl overflow-hidden rounded-lg"
+								>
+									<div class="w-1/2 hidden-middle">
+										<img
+											src="./assets/img/hanshake.jpg"
+											alt="Valores"
+											class="object-center"
+										/>
+									</div>
+									<div class="md:p-5 mt-5 rounded-r-[10px] md:w-1/2">
+										<h3 class="font-rubik font-bold text-2xl text-left mb-5">
+											Nuestros Valores
+										</h3>
+										<div class="font-nunitoSanstext-left">
+											<p class="mb-10 text-sm md:text-base">
+												No solo acompañamos a nuestros clientes sino tambien
+												buscamos transmitir mediante nuestro trabajo las
+												siguientes virtudes:
+											</p>
+											<ul class="md:pl-5">
+												<li class="font-bold text-base md:text-xl mb-3">
+													<i
+														class="fa-solid fa-circle-check pr-3 text-lightBlue"
+													></i>
+													Respeto
+												</li>
+												<li class="font-bold text-base md:text-xl mb-3">
+													<i
+														class="fa-solid fa-circle-check pr-3 text-lightBlue"
+													></i>
+													Compromiso
+												</li>
+												<li class="font-bold text-base md:text-xl mb-3">
+													<i
+														class="fa-solid fa-circle-check pr-3 text-lightBlue"
+													></i>
+													Cooperación
+												</li>
+												<li class="font-bold text-base md:text-xl mb-3">
+													<i
+														class="fa-solid fa-circle-check pr-3 text-lightBlue"
+													></i>
+													Crecimiento
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+			</section>
+			<!-- SECCION NOSOTROS BANNER -->
+			<section
+				class="flex items-center py-24 justify-center m-auto h-[550px] overflow-hidden relative"
+			>
+				<img
+					src="assets/img/Office2.jpg"
+					alt=""
+					class="absolute w-full h-full object-cover"
+				/>
+				<div class="bg-black h-full w-full absolute opacity-70"></div>
+				<article
+					class="max-w-screen-xl flex items-center justify-between absolute"
+				>
+					<div class="bg-black opacity-70 rounded-lg p-16 shadow-equipo">
+						<h2
+							class="font-rubik font-bold text-center text-whiteBg text-3xl mb-14"
+						>
+							EQUIPO AMITIÉ
+						</h2>
+						<div class="flex flex-col gap-5 z-50">
+							<div class="w-60 text-center">
+								<h3 class="font-nunitoSans text-xl font-black text-lightBlue">
+									GUSTAVO SKIDELSKY
+								</h3>
+								<p class="font-nunitoSans text-lightGrey">Contador público</p>
+							</div>
+							<div class="w-60 text-center">
+								<h3 class="font-nunitoSans text-xl font-black text-lightBlue">
+									MARIA MOLINA
+								</h3>
+								<p class="font-nunitoSans text-lightGrey">Contadora pública</p>
+							</div>
+						</div>
+					</div>
+				</article>
+			</section>
+			<!-- FOOTER -->
+			<footer id="contacto" class="py-24">
+				<div
+					class="grid justify-items-start max-w-screen-xl px-10 sm:justify-items-center md:grid-cols-2 lg:grid-cols-4 mx-auto bg-white"
+				>
+					<div class="pb-10 order-4 md:order-[0] w-full">
+						<img
+							src="assets/svg/AmitieIsologotipo.svg"
+							alt="Amitié Estudio Isologotipo"
+							class="min-w-[130px] w-2/5 max-w-[160px] md:w-1/2 pb-3"
+						/>
+						<p class="text-left sm:text-left text-darkGrey text-sm">
+							Copyright © 2022 Amitié <br />
+							Todos los derechos reservados.
+						</p>
+					</div>
+					<div class="pb-10 w-full">
+						<h2
+							class="font-rubik font-bold text-left text-bluePrimary text-2xl"
+						>
+							Navegación
+						</h2>
+						<ul class="flex flex-col gap-4 justify-end h-32 text-darkGrey">
+							<li>
+								<a href="#" class="inline-block">Inicio</a>
+							</li>
+							<li>
+								<a href="#nosotros" class="inline-block">Nosotros</a>
+							</li>
+							<li>
+								<a href="#servicios" class="inline-block">Servicios</a>
+							</li>
+						</ul>
+					</div>
+					<div class="pb-10 w-full">
+						<h2
+							class="font-rubik font-bold text-left text-bluePrimary text-2xl"
+						>
+							Contactanos
+						</h2>
+						<ul class="flex flex-col gap-4 justify-end h-32 text-darkGrey">
+							<li>
+								<img
+									src="assets/svg/phone-solid.svg"
+									alt=""
+									class="w-4 mr-2 inline-block"
+								/>
+								<p class="inline-block">+5493434674263</p>
+							</li>
+							<li>
+								<img
+									src="assets/svg/at-solid.svg"
+									alt=""
+									class="w-4 mr-2 inline-block"
+								/>
+								<p class="inline-block">estudioamitie@gmail.com</p>
+							</li>
+							<li>
+								<img
+									src="assets/svg/location-dot-solid.svg"
+									alt=""
+									class="w-4 mr-2 inline-block"
+								/>
+								<p class="inline-block">Entre Rios, Argentina.</p>
+							</li>
+						</ul>
+					</div>
+					<div class="pb-10 w-full">
+						<h2
+							class="font-rubik font-bold text-left text-bluePrimary text-2xl"
+						>
+							Redes Sociales
+						</h2>
+						<ul class="flex items-center h-32">
+							<li class="mb-2 hover:cursor-pointer">
+								<a
+									href="https://www.instagram.com/estudioamitie/"
+									target="_blank"
+								>
+									<i
+										class="fa-brands fa-instagram text-4xl hover:text-bluePrimary mx-3 ml-0 inline-block"
+									></i>
+								</a>
+							</li>
+							<li class="mb-2 hover:cursor-pointer">
+								<a
+									href="https://www.facebook.com/Amiti%C3%A9-Estudio-103548231900119"
+									target="_blank"
+								>
+									<i
+										class="fa-brands fa-facebook text-4xl hover:text-bluePrimary mx-3 inline-block"
+									></i>
+								</a>
+							</li>
+							<li class="mb-2 hover:cursor-pointer">
+								<a
+									href="https://api.whatsapp.com/send?phone=543437445166"
+									target="_blank"
+								>
+									<i
+										class="fa-brands fa-whatsapp text-4xl hover:text-bluePrimary mx-3 inline-block"
+									></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+		</main>
+
+		<!-- Link Flowbite CDN -->
+		<script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
+<!--  -->
