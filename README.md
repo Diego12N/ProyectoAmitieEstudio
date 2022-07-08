@@ -14,8 +14,14 @@ Mira Deployment para conocer como desplegar el proyecto.
 
 - Instale tailwindcss a través de npm y cree su archivo tailwind.config.js
 
+```sh
+npm install -D tailwindcss
+npx tailwindcss init
+```
+
 - Agregue las rutas a todos sus archivos de plantilla en su archivo tailwind.config.js:
 
+sh
 module.exports = {
 content: ["./src/**/*.{html,js}"],
 theme: {
@@ -23,6 +29,8 @@ extend: {},
 },
 plugins: [],
 }
+
+````
 
 - Agregue las directivas @tailwind para cada una de las capas de Tailwind a su archivo CSS principal:
 
@@ -34,18 +42,26 @@ plugins: [],
 
 ```html
 <link href="/dist/output.css" rel="stylesheet" />
-```
+````
 
 ### Despliegue 📦
 
 - Crear una carpeta "build" y copiar dentro los archivos que se encuentran en la carpeta src.
 - Obtener el archivo minificado de Tailwind ejecutando el comando:
-  "npx tailwindcss -o build.css --minify"
+
+```sh
+  npx tailwindcss -o build.css --minify
+```
+
 - Pegar el archivo "build.css" obtenido en el paso anterior, dentro de la carpeta build y remplazar la ruta en el archivo index.html:
 
 ```html
 <link href="../dist/output.css" rel="stylesheet" />
-=>
+```
+
+Cambiar por:
+
+```html
 <link href="build.css" rel="stylesheet" />
 ```
 
