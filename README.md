@@ -33,9 +33,11 @@ plugins: [],
 
 - Agregue las directivas @tailwind para cada una de las capas de Tailwind a su archivo CSS principal:
 
+```sh
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+```
 
 - Agregue su archivo CSS compilado a <head> y comience a usar las clases de utilidad de Tailwind para diseñar su contenido:
 
@@ -64,9 +66,9 @@ Cambiar por:
 <link href="build.css" rel="stylesheet" />
 ```
 
-Construido con 🛠️
+## Construido con 🛠️
 
 Taildwind - https://tailwindcss.com/
 Flowbite - https://flowbite.com/
 
-Muchas gracias 🎁
+> Muchas gracias 🎁
