@@ -68,7 +68,9 @@ Cambiar por:
 
 ## Construido con 🛠️
 
-Taildwind - https://tailwindcss.com/
+Taildwind - https://tailwindcss.com/ \
 Flowbite - https://flowbite.com/
+
+
 
 > Muchas gracias 🎁
